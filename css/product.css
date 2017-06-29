@@ -1,0 +1,52 @@
+html{
+	font-size: 16px;
+}
+.strategy{
+	margin-top: 2rem;
+	width: 100%;
+	/*padding-bottom:3rem;*/
+}
+.strategy .strategy_header{
+	padding: 0.8rem 1rem;
+	background: #A9A9A9;
+}
+.strategy .strategy_left{
+	margin: 0;
+	width: 50%;
+	float: left;
+	border: 0;
+	color: white;
+}
+.strategy .ladder{
+	width: 10%;
+	margin: 0;
+	padding:0;
+	border: 0;
+	float: right;
+}
+.strategy .ladder input{
+	text-indent: 0.5rem;
+	font-size: 0.1rem;
+	margin: 0;
+	padding: 0;
+	width:5rem;
+	float: right;
+}
+.strategy table{
+	width: 100%;
+	border: 1px solid #D5D5D5;
+	font-size: 0.8rem;
+	color: #9A9A9A;
+}
+.strategy table tr{
+	height: 2rem;
+}
+.strategy table tr td{
+	text-indent: 1rem;
+}
+.strategy table tr th{
+	text-indent: 1rem;
+	border: none;
+	padding: 0.5rem;
+	letter-spacing: 0.2rem;
+}
