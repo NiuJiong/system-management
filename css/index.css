@@ -186,6 +186,9 @@ header .two_nav a{
 	font-size: 0.8rem;
 	text-align: center;
 }
+.right .table thead tr th:nth-child(1){
+	cursor: pointer;
+}
 .right .table tbody{
 	display: block;
 }
@@ -284,6 +287,26 @@ header .two_nav a{
 	border: none;
 	border-radius:2rem;
 }
+/*.right .big_table table tr:last-child{
+	border: none;
+}
+.right .big_table table tr:last-child td{
+	font-size: 1rem;
+	border: none;
+}
+.right .big_table table tr:last-child td img{
+	width:15%;
+}
+.right .big_table table tr:last-child td button{
+	background: none;
+	border: none;
+}
+.right .big_table table tr:last-child td:nth-child(1){
+	text-align: right;
+}
+.right .big_table table tr:last-child td:nth-child(3){
+	text-align: start;
+}*/
 
 
 

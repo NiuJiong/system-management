@@ -110,7 +110,79 @@ $(function(){
 				timer=0;
 			}
 		}
-		drag("lx",'y');
+		drag("lx",'y');	
+		
+		
+		function big(data){
+			for(var i=0;i<data.length;i++){
+//				console.log(data[i].serial);
+				for(var j=i+1;j<data.length;j++){
+					if(data[i].serial > data[j].serial){  
+						var temp = data[i]; 
+						data[i] = data[j]; 
+						data[j] = temp;    
+					}
+				}
+			}
+			$.each(data, function(index,value) {
+				var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
+				$(".right table  tbody").prepend(trs);
+			});
+			
+			
+			$(".right table thead th:eq(0)").click(function(){
+				
+				
+				$(".right table tbody").html("");
+				
+				
+				
+				
+				if(data[0].serial > data[data.length - 1].serial){
+					for(var i=0;i<data.length;i++){
+						for(var j=i+1;j<data.length;j++){
+							if(data[i].serial > data[j].serial){  
+								var temp = data[i]; 
+								data[i] = data[j]; 
+								data[j] = temp;    
+							}
+						}
+					}
+					$.each(data, function(index,value) {
+					var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
+						$(".right table  tbody").prepend(trs);
+					});
+				}else{
+					for(var i=0;i<data.length;i++){
+						for(var j=i+1;j<data.length;j++){
+							if(data[i].serial < data[j].serial){  
+								var temp = data[i]; 
+								data[i] = data[j]; 
+								data[j] = temp;    
+							}
+						}
+					}
+					$.each(data, function(index,value) {
+					var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
+						$(".right table  tbody").prepend(trs);
+					});
+				}
+			});
+			
+			
+		}
+		
+		
+		
+		$.ajax({
+			url:"data.json",
+			type:"GET",
+			dataType:'json',
+			success:function(data){
+				
+				big(data);
+			}
+		});
 })
 
 
