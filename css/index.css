@@ -148,6 +148,8 @@ header .two_nav a{
 	overflow: auto;
 	border-bottom: 3px solid #A9A9A9;
 	z-index: 50;
+	position: relative;
+	cursor: se-resize;
 }
 .right .big_table thead{
 	background: #A9A9A9;
@@ -157,6 +159,9 @@ header .two_nav a{
 .right .big_table nav{
 	text-align: center;
 }
+/*.right .big_table table tr{
+	cursor: default;
+}*/
 .right .big_table table th:nth-child(1){
 	background: url(../img/xia.png) no-repeat 30% center;
 	background-size:6%;
