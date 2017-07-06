@@ -77,8 +77,8 @@ $(function(){
 		//				 to_y=Math.min(to_y,max_height);
 						if(to_y>=600){
 							to_y=600;
-						}else if(to_y<=100){
-							to_y=100;
+						}else if(to_y<=232){
+							to_y=232;
 						}
 						 // 一定要记得加“px"
 						 if(type=="x"){
