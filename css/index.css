@@ -143,66 +143,40 @@ header .two_nav a{
 	letter-spacing: 0.2rem;
 }
 .right .big_table{
-	height: 200px;
-/*	overflow: auto;*/
-	border-bottom: 2px solid #DCDCDC;
-	position: relative;
+	padding: 2rem;
+	height: 12rem;
 	overflow: auto;
+	border-bottom: 2px solid #999999;
+	position: relative;
+}
+.right .big_table thead{
+	background: #A9A9A9;
+	color: white;
 }
 .right .big_table #lx{
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom:0;
 	z-index: 99999;
 	width: 100%;
 	height: 10px;
 /*	background: red;*/
+	
 }
 .right .big_table #lx:hover{
 	cursor: n-resize;	
 }
-
-
-.right .table{
-	width: 100%;
-	border: 1px solid #DCDCDC;
-
-}
-.right .table thead{
-	background: #A9A9A9;
-	border: none;
-	display: table-header-group;
-	vertical-align: middle;
-}
-.right .table tr td{
-	border: 1px solid #DCDCDC;
-}
-.right .table thead tr{
-	display: block;
-	height: 2rem\9;
-}
-.right .table thead tr th{
-	width:1%;
-	font-size: 0.8rem;
+.right .big_table nav{
 	text-align: center;
 }
-.right .table thead tr th:nth-child(1){
-	cursor: pointer;
+.right .big_table table th:nth-child(1){
+	background: url(../img/xia.png) no-repeat 30% center;
+	background-size:6%;
 }
-.right .table tbody{
-	display: block;
+.right .big_table table th:nth-child(1).active{
+	background: url(../img/shang.png) no-repeat 30% center;
+	background-size:6%;
 }
-
-.right .table td{
-	width:5%;
-	font-size: 0.5rem;
-	font-size: 1rem\9;
-	text-align: center;
-	color: #8A758A;
-}
-
-
-
 
 
 
@@ -214,13 +188,6 @@ header .two_nav a{
 	padding:1rem;
 	overflow: auto;
 }
-
-
-
-
-
-
-
 .right .big_form p{
 	font-size: 0.5rem;
 }
@@ -253,6 +220,13 @@ header .two_nav a{
 	width:65%;
 	border: 1px solid #C8C8C8;
 	padding: 0.2rem 0.8rem;
+	border-radius:5px;
+	
+}
+.right .big_form select{
+	width:65%;
+	border: 1px solid #C8C8C8;
+	padding:0.15rem 0;
 	border-radius:5px;
 	
 }

@@ -124,21 +124,25 @@ $(function(){
 					}
 				}
 			}
+			
 			$.each(data, function(index,value) {
 				var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
-				$(".right table  tbody").prepend(trs);
+				$(".right .big_table table  tbody").prepend(trs);
 			});
 			
 			
-			$(".right table thead th:eq(0)").click(function(){
+			
+			$(".right .big_table .table-bordered thead th:eq(0)").click(function(){
 				
 				
-				$(".right table tbody").html("");
+				
+				$(".right  .table-bordered tbody").html("");
 				
 				
 				
 				
 				if(data[0].serial > data[data.length - 1].serial){
+					$(this).removeClass("active");
 					for(var i=0;i<data.length;i++){
 						for(var j=i+1;j<data.length;j++){
 							if(data[i].serial > data[j].serial){  
@@ -150,9 +154,11 @@ $(function(){
 					}
 					$.each(data, function(index,value) {
 					var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
-						$(".right table  tbody").prepend(trs);
+						$(".right .big_table table  tbody").prepend(trs);
 					});
 				}else{
+					$(this).addClass("active");
+					
 					for(var i=0;i<data.length;i++){
 						for(var j=i+1;j<data.length;j++){
 							if(data[i].serial < data[j].serial){  
@@ -164,13 +170,13 @@ $(function(){
 					}
 					$.each(data, function(index,value) {
 					var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
-						$(".right table  tbody").prepend(trs);
+						$(".right .big_table table  tbody").prepend(trs);
 					});
 				}
 			});
 			
 			
-		}
+	}
 		
 		
 		
