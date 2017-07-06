@@ -144,28 +144,16 @@ header .two_nav a{
 }
 .right .big_table{
 	padding: 2rem;
-	height: 12rem;
+	height: 200px;
 	overflow: auto;
-	border-bottom: 2px solid #999999;
-	position: relative;
+	border-bottom: 3px solid #A9A9A9;
+	z-index: 50;
 }
 .right .big_table thead{
 	background: #A9A9A9;
 	color: white;
 }
-.right .big_table #lx{
-	position: absolute;
-	left: 0;
-	bottom:0;
-	z-index: 99999;
-	width: 100%;
-	height: 10px;
-/*	background: red;*/
-	
-}
-.right .big_table #lx:hover{
-	cursor: n-resize;	
-}
+
 .right .big_table nav{
 	text-align: center;
 }
