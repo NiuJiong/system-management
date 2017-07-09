@@ -144,7 +144,7 @@ header .two_nav a{
 }
 .right .big_table{
 	padding: 2rem;
-	height: 200px;
+	height: 150px;
 	overflow: auto;
 	border-bottom: 3px solid #A9A9A9;
 	z-index: 50;
@@ -182,9 +182,9 @@ header .two_nav a{
 
 
 .right .twotable{
-	margin: 2rem 0 0 0;
+	margin: 0.4rem 0 0 0;
 	padding: 2rem;
-	height: 200px;
+	height: 150px;
 	overflow: auto;
 	border-bottom: 3px solid #A9A9A9;
 	z-index: 50;
