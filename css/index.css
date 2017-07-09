@@ -151,6 +151,12 @@ header .two_nav a{
 	position: relative;
 	cursor: se-resize;
 }
+.right .big_table table{
+	min-width: 768px;
+}
+.right .big_table table tr,th{
+	width: 33%;
+}
 .right .big_table thead{
 	background: #A9A9A9;
 	color: white;
@@ -163,15 +169,47 @@ header .two_nav a{
 	cursor: default;
 }*/
 .right .big_table table th:nth-child(1){
-	background: url(../img/xia.png) no-repeat 30% center;
-	background-size:6%;
+	background: url(../img/xia.png) no-repeat 25% center;
+	background-size:4%;
 }
 .right .big_table table th:nth-child(1).active{
-	background: url(../img/shang.png) no-repeat 30% center;
-	background-size:6%;
+	background: url(../img/shang.png) no-repeat 25% center;
+	background-size:4%;
 }
 
 
+
+
+
+.right .twotable{
+	margin: 2rem 0 0 0;
+	padding: 2rem;
+	height: 200px;
+	overflow: auto;
+	border-bottom: 3px solid #A9A9A9;
+	z-index: 50;
+	position: relative;
+	cursor: se-resize;
+}
+.right .twotable table{
+	min-width: 768px;
+}
+.right .twotable thead{
+	background: #A9A9A9;
+	color: white;
+}
+
+.right .twotable nav{
+	text-align: center;
+}
+.right .twotable table th:nth-child(1){
+	background: url(../img/xia.png) no-repeat 25% center;
+	background-size:4%;
+}
+.right .twotable table th:nth-child(1).active{
+	background: url(../img/shang.png) no-repeat 25% center;
+	background-size:4%;
+}
 
 
 
@@ -254,26 +292,6 @@ header .two_nav a{
 	border: none;
 	border-radius:2rem;
 }
-/*.right .big_table table tr:last-child{
-	border: none;
-}
-.right .big_table table tr:last-child td{
-	font-size: 1rem;
-	border: none;
-}
-.right .big_table table tr:last-child td img{
-	width:15%;
-}
-.right .big_table table tr:last-child td button{
-	background: none;
-	border: none;
-}
-.right .big_table table tr:last-child td:nth-child(1){
-	text-align: right;
-}
-.right .big_table table tr:last-child td:nth-child(3){
-	text-align: start;
-}*/
 
 
 
