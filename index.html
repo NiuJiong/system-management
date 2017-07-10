@@ -7,46 +7,19 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	
 	</head>
 	<body>
 		<header>
-			<h2 >客户<span><img src="img/sanjiao (2).png"/></span></h2>
-					<div class="two_nav">
-						<a href="meter.html">表具</a><a href="product.html">产品/计费</a>
-					</div>	
+			<h2 >客户</h2>
 		</header>
 		<div class="left">
 			<div class="left_tab">
-				<h2>天信燃气公司</h2>
+				<h2><span><img src="img/down.png"/></span>客户</h2>
 				<ul>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-				</ul>
-				<h2>天信燃气公司</h2>
-				<ul>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-				</ul>
-				<h2>天信燃气公司</h2>
-				<ul>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-				</ul>
-				<h2>天信燃气公司</h2>
-				<ul>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-				</ul>
-				<h2>天信燃气公司</h2>
-				<ul>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-					<li><a href="#">天信工商用户</a></li>
-				</ul>
+					<li><a href="meter.html">表具</a></li>
+					<li><a href="product.html">产品/计费</a></li>
+				</ul>	
 			</div>
 		</div>
 		<div class="right">
@@ -55,17 +28,26 @@
 					<button><a href="#">开户</a></button>
 					<button><a href="#">销户</a></button>
 				</div>		
-			
+				
+				
+				<!--<label for="serial_number" class="onesuo">客户号：</label>-->
+				<div class="form_tab onesuo">
+					<label for="sousou">客户号：</label>
+					<input type="text" id="sousou" placeholder="00001028106" onkeydown="changeInputlength(this)"/><span><img src="img/sssssssss.png"/></span>
+				</div>		
+					
 				<div class="big_table" id="big_table">
+					
+					
 						<table border="" cellspacing="" cellpadding="" 	class="table table-bordered table-hover">
 							<thead>
 								<th>客户号</th>
 								<th>客户简称</th>
 								<th>客户名称</th>
 							</thead>
-						<tbody>
-								
-						</tbody>
+							<tbody>
+									
+							</tbody>
 						</table>
 						<nav aria-label="Page navigation">
 						  <ul class="pagination">
@@ -87,7 +69,15 @@
 						  </ul>
 						</nav>
 				
-				</div>
+				
+				</div>		
+				
+				
+				<div class="form_tab twosou">
+					<label for="tsousou">表具号：</label>
+					<input type="text" id="tsousou" placeholder="00001028106" onkeydown="changeInputlengthone(this)"/><span><img src="img/sssssssss.png"/></span>
+				</div>	
+				
 				
 				<div class="twotable" id="twotable">
 						<table border="" cellspacing="" cellpadding="" 	class="table table-bordered table-hover">
@@ -271,5 +261,17 @@
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/td.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function changeInputlength(cursor) 
+			{ 
+				var getText=document.getElementById("sousou"); 
+				cursor.size=getText.value.length+12; 
+			}
+			function changeInputlengthone(tcursor) 
+			{ 
+				var getText=document.getElementById("tsousou"); 
+				tcursor.size=getText.value.length+12; 
+			}
+		</script>
 	</body>
 </html>

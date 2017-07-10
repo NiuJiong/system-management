@@ -82,33 +82,43 @@ header .two_nav a{
 	float: left;
 }
 .left .left_tab h2{
-	font-size: 0.8rem;
+	font-size: 1.5rem;
 	width: 100%;
 	padding: 0.5rem 0;
+	padding-left:0.5rem;
 	margin: 0;
 	cursor: pointer;
+/*	border: 1px solid red;*/
 }
-.addback{
-	background: url(../img/shang.png) no-repeat 90% 50%;
-	background-size:5%;
+.left .left_tab h2 span{
+	display: inline-block;
+	width: 1.5rem;
 }
-.addbacktwo{
-	background: url(../img/xia.png) no-repeat 90% 50%;
-	background-size:5%;
+.left .left_tab h2 span img{
+	padding-left: 0.2rem;
+}
+.imgzheng{
+	transition:all 0.5s;
+	transform: rotate(-90deg);
+}
+.imgfu{
+	transition:all 0.5s;
+	transform: rotate(0deg);
 }
 .left .left_tab ul{
 	margin: 0;
 	padding: 0;
 }
 .left .left_tab ul li{
-	
+		
 }
 .left .left_tab ul li a{
 	display: block;
 	padding: 0.5rem 0;
 	color: #8A8A8A;
 	text-indent: 2rem;
-	font-size: 0.65rem;
+	font-size: 1rem;
+	padding-left: 0.5rem;
 }	
 .left .left_tab ul li a:hover{
 	color: white;
@@ -133,6 +143,7 @@ header .two_nav a{
 	margin-right:2rem;
 	border-radius:0.5rem;
 	background:#999999;
+
 }
 .right .buttons button a{
 	color: white;
@@ -143,15 +154,38 @@ header .two_nav a{
 	letter-spacing: 0.2rem;
 }
 .right .big_table{
-	padding: 2rem;
+	padding:0.5rem 2rem 2rem 2rem;
 	height: 150px;
 	overflow: auto;
 	border-bottom: 3px solid #A9A9A9;
 	z-index: 50;
 	position: relative;
-	cursor: se-resize;
+	cursor: ;
 }
+
+
+.right .onesuo,.twosou{
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+.right .onesuo img,.twosou img{
+	width: 30px;
+	margin-left: -40px;
+	cursor: pointer;
+}
+.right .onesuo #sousou,.twosou #tsousou{
+	border: 1px solid #C8C8C8;
+	padding: 0.2rem 0.8rem;
+	border-radius:5px;
+	/*width: 800px;*/
+	min-width: 100px;
+}
+
+
+
+
 .right .big_table table{
+	
 	min-width: 768px;
 }
 .right .big_table table tr,th{
@@ -182,14 +216,14 @@ header .two_nav a{
 
 
 .right .twotable{
-	margin: 0.4rem 0 0 0;
-	padding: 2rem;
+	
+	padding: 1rem 2rem 2rem 2rem;
 	height: 150px;
 	overflow: auto;
 	border-bottom: 3px solid #A9A9A9;
 	z-index: 50;
 	position: relative;
-	cursor: se-resize;
+	cursor: ;
 }
 .right .twotable table{
 	min-width: 768px;
@@ -367,5 +401,12 @@ header .two_nav a{
 	.right .buttons button a{
 		padding: 0.5rem 1rem;
 		font-size:0.1rem;
+	}
+	.right .suo{
+		margin: 0;
+		display: inline-block;
+		width:24px;
+		vertical-align: top;
+		margin-top:0.78rem;
 	}
 }

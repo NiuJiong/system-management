@@ -21,14 +21,15 @@ $(function(){
 		$(".left .left_tab h2").click(function(){
 			if($(this).next().is(":hidden")){
 				$(this).next().show("slow");
-				$(this).removeClass("addback");
-				$(this).addClass("addbacktwo");
+				$(".left .left_tab h2 span img").removeClass("imgzheng");
+				$(".left .left_tab h2 span img").addClass("imgfu");
+				
 			}else{
 				$(this).next().hide("slow");
-				$(this).removeClass("addbacktwo");
-				$(this).addClass("addback");
+				$(".left .left_tab h2 span img").removeClass("imgfu");
+				$(".left .left_tab h2 span img").addClass("imgzheng");
 			}
-		});				
+		});			
 
 		$(".buttons .visible-xs").click(function(){
 			var lef = $(".left").position().left;
@@ -69,7 +70,7 @@ $(function(){
 			}
 			
 			
-			$.each(data, function(index,value) {
+			$.each(data, function(index,value){
 				var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
 				$(".right .big_table table  tbody").prepend(trs);
 				var twotrs = "<tr><td>"+data[index].xh+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
@@ -82,7 +83,7 @@ $(function(){
 				
 				
 				
-				$(".right big_table .table-bordered tbody").html("");
+				$(".right .big_table .table-bordered tbody").html("");
 				
 				
 				
@@ -101,7 +102,6 @@ $(function(){
 					$.each(data, function(index,value) {
 					var trs = "<tr><td>"+data[index].serial+"</td><td>"+data[index].abbreviation+"</td><td>"+data[index].name+"</td></tr>";
 						$(".right .big_table table  tbody").prepend(trs);
-						
 					});
 				}else{
 					$(this).addClass("active");
@@ -176,6 +176,14 @@ $(function(){
 				big(data);
 			}
 		});
+		
+		
+		
+		function changeInputlength(cursor) 
+		{ 
+			var getText=document.getElementById("sousou"); 
+			cursor.size=getText.value.length+2; 
+		}
 })
 
 
